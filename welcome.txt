@@ -1,1 +1,5 @@
-Welcome to the club! 
+Welcome to the club! Hello to the peeps out there baby!!! 
+select * from 
+tmc_strive.wfp_flows 
+group by start_date 
+order by start_date desc 
