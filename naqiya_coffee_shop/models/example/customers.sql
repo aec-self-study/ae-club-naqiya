@@ -4,9 +4,9 @@
 
 with customer_orders as (
   select
-     customer_id
-     , count(*) as n_orders
-     , min(created_at) as first_order_at
+     customer_id,
+     count(*) as num_orders,
+     min(created_at) as first_order_at
   from analytics-engineers-club.coffee_shop.orders customer_orders 
   group by 1
 ), 
